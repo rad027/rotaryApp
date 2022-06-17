@@ -1,10 +1,16 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'rotaryApp',
+  appId: 'rotary_district.app',
+  appName: 'Rotary District 2520',
   webDir: 'dist',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+  plugins: {
+      "SplashScreen": {
+          "launchShowDuration": 0
+      }
+  },
+  cordova: {}
 };
 
 export default config;
