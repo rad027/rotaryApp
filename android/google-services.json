@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "349057827923",
+    "project_id": "rotary-district-b4e59",
+    "storage_bucket": "rotary-district-b4e59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349057827923:android:f23ea5cd1b14321e2b32a6",
+        "android_client_info": {
+          "package_name": "rotary_district.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349057827923-dqgc5vk0jbnd0dj4vgt7bpj27d54tvll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMWVlWVRByhmlk_othoo9EuXMHVtAfXM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349057827923-dqgc5vk0jbnd0dj4vgt7bpj27d54tvll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

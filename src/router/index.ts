@@ -17,10 +17,12 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'tab1',
+        name : 'homepage',
         component: () => import('@/views/Tab1Page.vue')
       },
       {
         path: 'tab2',
+        name : 'notifications',
         component: () => import('@/views/Tab2Page.vue')
       },
       {

@@ -31,3 +31,10 @@ const app = createApp(App)
 router.isReady().then(() => {
   app.mount('#app');
 });
+//window.io = require('');
+declare global {
+  interface Window {
+    Echo?: any;
+    io?: any;
+  }
+}

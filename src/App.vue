@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <ion-app>
     <ion-router-outlet />
@@ -10,6 +11,7 @@ import { defineComponent } from 'vue';
 import { FCM } from '@capacitor-community/fcm';
 import { Plugins, Capacitor } from '@capacitor/core';
 const { PushNotifications } = Plugins;
+
 export default defineComponent({
   name: 'App',
   components: {
@@ -19,6 +21,11 @@ export default defineComponent({
   data(){
     return {
       fcm: new FCM(),
+      /* echo : new Echo({
+        broadcaster: "socket.io",
+        host: "localhost:6001",
+      }),
+      io : require('socket.io-client') */
     }
   },
   mounted(){
@@ -44,10 +51,12 @@ export default defineComponent({
     console.log(`notification ${JSON.stringify(notification)}`);
     }),
     PushNotifications.addListener("pushNotificationActionPerformed", async (notification) => {
-    alert("notification " + notification);
-    console.log("notification succeeded");
+      alert("notification " + notification);
+      console.log("notification succeeded");
     }),
     PushNotifications.register();
+
   }
+
 });
 </script>

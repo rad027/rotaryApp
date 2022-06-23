@@ -37,7 +37,7 @@
                 </div>
               </div>
             </ion-col>
-            <ion-col>
+            <ion-col @click="$router.push({ name : 'notifications' })">
               <div class="main-box">
                 <div class="sub-box">
                   <ion-icon name="notifications-outline" size="large"></ion-icon>
